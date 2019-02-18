@@ -19,7 +19,6 @@ import static javax.persistence.LockModeType.PESSIMISTIC_WRITE;
 public class AccountDaoImpl implements AccountDao {
     private static final String SELECT_BY_IDS = "SELECT a FROM Account a WHERE a.id in :ids";
 
-    @Getter
     private final Provider<EntityManager> em;
 
     @Inject
